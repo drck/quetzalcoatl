@@ -1,43 +1,434 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>HSBC Sustentability</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="image-container set-full-height" style="background-image: url('assets/img/wizard-book.jpg')">
+		<!--   Creative Tim Branding   -->
+		<a href="http://creative-tim.com">
+			<div class="logo-container">
+				<div class="logo">
+					<img src="assets/img/new_logo.png">
+				</div>
+				<div class="brand">
+					Quetzalcoatl
+				</div>
+			</div>
+		</a>
+
+		<!--  Made With Material Kit  -->
+		<a href="http://demos.creative-tim.com/material-kit/index.html?ref=material-bootstrap-wizard"
+			class="made-with-mk">
+			<div class="brand">MK</div>
+			<div class="made-with">Made with <strong>Material Kit</strong></div>
+		</a>
+
+		<!--   Big container   -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<!--      Wizard container        -->
+					<div class="wizard-container">
+						<div class="card wizard-card" data-color="red" id="wizard">
+							<form action="" method="">
+								<!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+
+								<div class="wizard-header">
+									<h3 class="wizard-title">
+										Creditos Verdes
+									</h3>
+									<h5>Te ayudaremos a seleccionar la mejor opción
+										para la energía alternativa .</h5>
+								</div>
+								<div class="wizard-navigation">
+									<ul>
+										<li><a href="#captain" data-toggle="tab">Tipo de Credito</a></li>
+										<li><a href="#details" data-toggle="tab">Configuracion</a></li>
+										<li><a href="#calculator" data-toggle="tab">Calculadora</a></li>
+										<li><a href="#oferta" data-toggle="tab">Oferta</a></li>
+									</ul>
+								</div>
+
+								<div class="tab-content">
+									<div class="tab-pane" id="details">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="info-text"> Necesitamos saber un poco de ti.</h4>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">self_improvement</i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Nombre</label>
+														<input name="name2" type="text" class="form-control">
+													</div>
+												</div>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">self_improvement</i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Country</label>
+														<select class="form-control">
+															<option disabled="" selected=""></option>
+															<option value="Afghanistan"> Mexico </option>
+															<option value="Albania"> Corea </option>
+															<option value="Algeria"> España </option>
+															<option value="American Samoa"> American Samoa </option>
+															<option value="Andorra"> Colombia </option>
+															<option value="Angola"> EstadosUnidos </option>
+															<option value="Anguilla"> Peru </option>
+															<option value="Antarctica"> Canada </option>
+															<option value="...">...</option>
+														</select>
+													</div>
+												</div>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">mail</i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Email</label>
+														<input name="name2" type="email" class="form-control">
+													</div>
+												</div>
+
+											</div>
+											<div class="col-sm-6">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">self_improvement</i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Apellidos</label>
+														<input name="name2" type="text" class="form-control">
+													</div>
+												</div>
+
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">self_improvement</i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">CP</label>
+														<input name="name2" type="text" class="form-control">
+													</div>
+												</div>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">self_improvement</i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Telefono</label>
+														<input name="name2" type="text" class="form-control">
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane" id="calculator">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="info-text"> Haremos un cálculo en base a tu consumo y lo que vas a ahorrar </h4>												
+											</div>
+
+											<!-- Stream video via webcam -->
+											
+											<div class="col-sm-12 mb-5 video-wrap " style="text-align:center">
+												<b>Ingresa tu recibo de Luz, Agua o Ingresos.</b>
+												<video id="video" playsinline autoplay></video>
+												<!-- Webcam video snapshot -->
+												<canvas class="col-sm-12 mb-5 video-wrap " id="canvas" width="640"
+													height="360" style="text-align:center; display: none;"></canvas>
+
+											</div>
+
+											<!-- Trigger canvas web API -->
+											<div class="row mt-5" style="text-align:center">
+												<div class="col-sm-3"></div>
+												<div class="col-sm-3">
+													<button class='btn  btn-fill  btn-wd' id="snap">Capture</button>
+												</div>
+												<div class="col-sm-3">
+													<span class="btn btn-file">
+														<i class="material-icons left">cloud_upload</i>  
+														Browse<input  id="input"  type="file">
+													</span>
+													<div class="col-sm-3"></div>
+												</div>
+											</div>
+
+
+
+										</div>
+									</div>
+
+									<div class="tab-pane" id="oferta">
+										<div class="row">
+											<div class="col-sm-12">
+												<h4 class="info-text text"> Ofertas.</h4>
+											</div>
+											<div class="col-sm-1"></div>
+											<div class="col-sm-5">
+												<div class="thumbnail text-center">
+													<div style="font-size: 1.7rem; margin-block: 0.5rem;"><b>Solucion
+															Optima</b></div>
+													<div style="font-size: 1rem;">Precio estimado</div>
+													<div style="font-size: 3rem; color: #f44336;">$66.45</div>
+													<div style="font-size: 1rem;">Nuestra propuesta de kit:</div>
+													<div style="font-size: 1rem; margin-block: 1rem;">Financiación 18
+														meses HSBC Green: <b style="font-size: 1.5rem;">$12,950.00</b>
+													</div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Ahorro anual: <b
+															style="color: rgb(28 183 69); ">$798.00</b> <i
+															class="icon material-icons"
+															style="color: rgb(153 153 153); font-size: 14px;">info</i>
+													</div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Ahorro 25 años:
+														<b style="color: rgb(28 183 69); ">$12,123.00</b></div>
+													<br>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Amortización:
+														<b>$798.00</b></div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Nº de paneles:
+														<b>9</b></div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Potencia: <b>4
+															kWp</b></div>
+
+													<div style="font-size: 1rem; margin-block: 0.2rem;">
+														<img src="assets/kit1.jpg" width="140" height="140"/>
+													</div>
+													<br>
+													<button type="button" class="btn btn-group-sm">Solicitar
+														Oferta</button>
+													<button type="button" class="btn btn-group-sm btn-danger">Comprar
+														Kit</button>
+												</div>
+											</div>
+
+											<div class="col-sm-5">
+												<div class="thumbnail text-center">
+													<div style="font-size: 1.7rem; margin-block: 0.5rem;"><b>Solucion
+															Avanzada</b></div>
+													<div style="font-size: 1rem;">Precio estimado</div>
+													<div style="font-size: 3rem; color: #f44336;">$143.45</div>
+													<div style="font-size: 1rem;">Nuestra propuesta de kit:</div>
+													<div style="font-size: 1rem; margin-block: 1rem;">Financiación 18
+														meses HSBC Green: <b style="font-size: 1.5rem;">$45,950.00</b>
+													</div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Ahorro anual: <b
+															style="color: rgb(28 183 69); ">$1534.00</b> <i
+															class="icon material-icons"
+															style="color: rgb(153 153 153); font-size: 14px;">info</i>
+													</div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Ahorro 25 años:
+														<b style="color: rgb(28 183 69); ">$45,123.00</b></div>
+													<br>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Amortización:
+														<b>$1548.00</b></div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Nº de paneles:
+														<b>18</b></div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">Potencia: <b>24
+															kWp</b></div>
+													<div style="font-size: 1rem; margin-block: 0.2rem;">
+																<img src="assets/kit2.jpg" width="140" height="140"/>
+													</div>
+													<br>
+
+													<button type="button" class="btn btn-group-sm	">Solicitar
+														Oferta</button>
+													<button type="button" class="btn btn-group-sm btn-danger">Comprar
+														Kit</button>
+												</div>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
+									</div>
+									<div class="tab-pane" id="captain">
+										<h4 class="info-text">Para que deseas el credito? </h4>
+										<div class="row">
+											<div class="col-sm-10 col-sm-offset-1">
+												<div class="col-sm-4">
+													<div class="choice btn-next" onclick="location.href='#details'"
+														data-toggle="wizard-radio" rel="tooltip"
+														title="sSolicita un credito para transporte electrico">
+														<input type="radio" name="job" value="Design">
+														<div class="icon">
+															<i class="material-icons">commute</i>
+														</div>
+														<h6>Transporte</h6>
+													</div>
+												</div>
+												<div class="col-sm-4" href="#details">
+													<div class="choice btn-next" data-toggle="wizard-radio"
+														rel="tooltip"
+														title="Solicita un credito par la instalacion de paneles o calentadores solares.">
+														<input type="radio" name="job" value="Code">
+														<div class="icon">
+															<i class="material-icons">home</i>
+														</div>
+														<h6>Hogar</h6>
+													</div>
+												</div>
+												<div class="col-sm-4" href="#details">
+													<div class="choice btn-next" data-toggle="wizard-radio"
+														rel="tooltip" title="Solicita un credito para paneles solares ">
+														<input type="radio" name="job" value="Code">
+														<div class="icon">
+															<i class="material-icons">business</i>
+														</div>
+														<h6>Empresarial</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="wizard-footer">
+									<div class="pull-right">
+										<input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Next' />
+										<input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish' />
+									</div>									
+									<div class="clearfix"></div>
+								</div>
+								
+						</div>
+						
+						
+					</div>
+					</form>
+				</div>
+			</div> <!-- wizard container -->
+		</div>
+	</div> <!-- row -->
+	</div> <!--  big container -->
+
+	
+	</div>
+
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js"></script>
+<script>
+	const video = document.getElementById('video');
+	const canvas = document.getElementById('canvas');
+	const snap = document.getElementById("snap");
+	const errorMsgElement = document.querySelector('span#errorMsg');
+	var input = document.getElementById('input');
+
+	input.addEventListener('change', handleFiles, false);
+
+	const constraints = {
+		video: {
+			width: 640,
+			height: 360
+		}
+	};
+
+	// Access webcam
+	async function init() {
+		try {
+			const stream = await navigator.mediaDevices.getUserMedia(constraints);
+			handleSuccess(stream);
+		} catch (e) {
+			errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+		}
+	}
+
+	// Success
+	function handleSuccess(stream) {
+		window.stream = stream;
+		video.srcObject = stream;
+	}
+
+	// Load init
+	init();
+
+	// Draw image
+	var context = canvas.getContext('2d');
+	snap.addEventListener("click", function () {
+		context.drawImage(video, 0, 0, 640, 360);
+		video.style.display = "none";
+		canvas.style.display = "block";
+	});
+
+	function handleFiles(e) {
+		var ctx = document.getElementById('canvas').getContext('2d');
+		var reader = new FileReader();
+		var file = e.target.files[0];
+		// load to image to get it's width/height
+		var img = new Image();
+		video.style.display = "none";
+		canvas.style.display = "block";
+		img.onload = function () {
+			// setup scaled dimensions
+			var scaled = getScaledDim(img, ctx.canvas.dataMaxWidth, ctx.canvas.dataMaxHeight);
+			// scale canvas to image
+			ctx.canvas.width = scaled.width;
+			ctx.canvas.height = scaled.height;
+			// draw image
+			ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height);
+		}
+		// this is to setup loading the image
+		reader.onloadend = function () {
+			img.src = reader.result;
+		}
+		// this is to read the file
+		reader.readAsDataURL(file);
+	}
+
+	// returns scaled dimensions object
+	function getScaledDim(img, maxWidth, maxHeight) {
+		var scaled = {
+			ratio: img.width / img.height,
+			width: img.width,
+			height: img.height
+		}
+		if (scaled.width > maxWidth) {
+			scaled.width = maxWidth;
+			scaled.height = scaled.width / scaled.ratio;
+		}
+		if (scaled.height > maxHeight) {
+			scaled.height = maxHeight;
+			scaled.width = scaled.height / scaled.ratio;
+		}
+		return scaled;
+	}
+</script>
+
 </html>
